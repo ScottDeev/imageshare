@@ -2,8 +2,9 @@
 document.getElementById('share').addEventListener('click', async () => {
     const files = document.querySelector('img')
     console.log(files);
-    if (!navigator.canShare()) {
+    if (!navigator.canShare) {
         console.log('cant share');
+        return
     }
 
     if (navigator.canShare( {files} )) {
