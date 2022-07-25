@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <img height="100px" src="./Img/picture.jpg" alt="">
-    <button id="share">Share</button>
+    <div>
+        <label for="files">Select images to share:</label>
+        <input id="files" type="file" accept="image/*" multiple>
+    </div>
+    <button id="share" type="button">Share your images!</button>
+    <output id="output"></output>
 </body>
 <script src="app.js"></script>
 </body>
