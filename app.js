@@ -20,9 +20,7 @@ document.getElementById('share').addEventListener('click', async () => {
   if (navigator.canShare({ files })) {
     try {
       await navigator.share({
-        files,
-        title: 'Images',
-        text: 'Beautiful images'
+        files
       })
       output.textContent = 'Shared!'
     } catch (error) {
